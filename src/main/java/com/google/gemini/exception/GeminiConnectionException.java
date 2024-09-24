@@ -1,4 +1,4 @@
-package com.google.gemini;
+package com.google.gemini.exception;
 
 public class GeminiConnectionException extends RuntimeException {
 

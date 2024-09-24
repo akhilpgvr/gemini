@@ -1,6 +1,6 @@
 package com.google.gemini.services;
 
-import com.google.gemini.GeminiConnectionException;
+import com.google.gemini.exception.GeminiConnectionException;
 import com.google.gemini.model.dtos.request.GeminiRequest;
 import com.google.gemini.model.dtos.response.GeminiResponse;
 import com.google.gemini.model.dtos.response.GeminiSearchResponse;
