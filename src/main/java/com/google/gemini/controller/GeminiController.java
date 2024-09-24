@@ -2,7 +2,7 @@ package com.google.gemini.controller;
 
 import com.google.gemini.controller.rules.GeminiInterface;
 import com.google.gemini.model.dtos.request.GeminiRequest;
-import com.google.gemini.model.dtos.response.GeminiResponse;
+import com.google.gemini.model.dtos.response.GeminiSearchResponse;
 import com.google.gemini.services.GeminiService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +26,7 @@ public class GeminiController implements GeminiInterface {
     @Override
     @Operation(summary = "test api", description = "")
     @PostMapping("/gemini")
-    public ResponseEntity<GeminiResponse> askGemini(@RequestBody GeminiRequest request) {
+    public ResponseEntity<GeminiSearchResponse> askGemini(@RequestBody GeminiRequest request) {
         return new ResponseEntity<>(geminiService.askGemini(request), HttpStatus.OK);
     }
 

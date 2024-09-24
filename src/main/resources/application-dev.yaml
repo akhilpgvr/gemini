@@ -14,10 +14,10 @@ spring:
       password: admin
       database: bus-booking-system
       uri: mongodb://localhost:27017
+  config:
+    import: optional:secrets.properties
 
 config:
   rest:
     service:
       google-gemini-url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
-    meta-data:
-      key: AIzaSyBPBxmQqqyrodfSZJhiOzPvskmS4DyZIwc
