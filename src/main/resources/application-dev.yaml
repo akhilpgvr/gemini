@@ -1,0 +1,16 @@
+server:
+  port: 9980
+  servlet:
+    context path: "/google/v1"
+spring:
+  application.name: gemini
+  mvc:
+    path match:
+      matching-strategy: ant-path-matcher
+
+  data:
+    mongodb:
+      user: admin
+      password: admin
+      database: bus-booking-system
+      uri: mongodb://localhost:27017
