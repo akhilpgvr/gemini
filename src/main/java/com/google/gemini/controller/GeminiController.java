@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/gemini")
+@RequestMapping("/connect")
 public class GeminiController implements GeminiInterface {
 
 
@@ -25,7 +25,7 @@ public class GeminiController implements GeminiInterface {
 
     @Override
     @Operation(summary = "test api", description = "")
-    @PostMapping("/gemini")
+    @PostMapping("/ask-alpha")
     public ResponseEntity<GeminiSearchResponse> askGemini(@RequestBody GeminiRequest request) {
         return new ResponseEntity<>(geminiService.askGemini(request), HttpStatus.OK);
     }
